@@ -89,9 +89,9 @@ check_symbol_exists( CL_VERSION_1_1 ${CL_HEADER_FILE} HAVE_CL_1_1 )
 # message( STATUS "HAVE_CL_1_1: ${HAVE_CL_1_1}" )
 
 # set OpenCL_VERSION to the highest detected version
-if( HAVE_CL_2_0 )
-  set( OpenCL_VERSION "2.0" )
-elseif( HAVE_CL_1_2 )
+# if( HAVE_CL_2_0 )
+#   set( OpenCL_VERSION "2.0" )
+if( HAVE_CL_1_2 )
   set( OpenCL_VERSION "1.2" )
 elseif( HAVE_CL_1_1 )
   set( OpenCL_VERSION "1.1" )
